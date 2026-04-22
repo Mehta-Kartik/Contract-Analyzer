@@ -1,0 +1,167 @@
+[2026-04-22 17:57:49,829] 16 root - INFO - Data ingestion pipeline started.
+[2026-04-22 17:57:49,830] 19 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 17:57:49,831] 358 root - INFO - Starting clause parsing.
+[2026-04-22 17:57:49,831] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 17:57:49,884] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 17:57:49,885] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 17:57:49,895] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 17:57:49,900] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 17:57:49,912] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 17:57:49,913] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 17:57:49,913] 24 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 17:57:49,914] 27 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 17:57:49,914] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 17:57:49,914] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 17:57:49,914] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 17:57:49,915] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 17:57:51,961] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 17:57:51,962] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 17:57:51,963] 33 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 17:57:51,964] 35 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:00:48,286] 16 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:00:48,287] 19 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:00:48,287] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:00:48,287] 359 root - INFO - Input file: data\raw\agreement-between-publisher-and-author.docx
+[2026-04-22 18:00:48,346] 368 root - INFO - Extracted 21 raw non-empty paragraphs from document.
+[2026-04-22 18:00:48,346] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PUBLISHER AND AUTHOR
+[2026-04-22 18:00:48,359] 377 root - INFO - Built 59 logical lines after sentence splitting and joining.
+[2026-04-22 18:00:48,386] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-22 18:00:48,400] 441 root - INFO - Saved 16 clauses to data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-22 18:00:48,401] 442 root - INFO - Source file recorded: agreement-between-publisher-and-author.docx
+[2026-04-22 18:00:48,401] 24 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:00:48,402] 27 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:00:48,402] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:00:48,402] 90 root - INFO - JSON source: data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-22 18:00:48,402] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:00:48,402] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:00:51,405] 116 root - INFO - Inserted 18 records into collection 'contract_clauses'.
+[2026-04-22 18:00:51,406] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:00:51,408] 33 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:00:51,409] 35 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:01:10,167] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:01:10,167] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:01:10,168] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:01:10,168] 359 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-22 18:01:10,225] 368 root - INFO - Extracted 2 raw non-empty paragraphs from document.
+[2026-04-22 18:01:10,226] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-22 18:01:10,230] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-22 18:01:10,242] 386 root - INFO - Stop marker encountered: 'In witness whereof the parties hereto have executed these presents on the day, month and year first above-written.'. Stopping parse.
+[2026-04-22 18:01:10,252] 441 root - INFO - Saved 7 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-22 18:01:10,252] 442 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-22 18:01:10,253] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:01:10,253] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:01:10,253] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:01:10,253] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-22 18:01:10,254] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:01:10,254] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:01:11,685] 116 root - INFO - Inserted 7 records into collection 'contract_clauses'.
+[2026-04-22 18:01:11,686] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:01:11,688] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:01:11,689] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:02:03,734] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:02:03,735] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:02:03,736] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:02:03,736] 359 root - INFO - Input file: data\raw\cancellation-of-an-agreement.docx
+[2026-04-22 18:02:03,793] 368 root - INFO - Extracted 16 raw non-empty paragraphs from document.
+[2026-04-22 18:02:03,793] 372 root - INFO - Agreement heading detected: CANCELLATION OF AN AGREEMENT
+[2026-04-22 18:02:03,799] 377 root - INFO - Built 14 logical lines after sentence splitting and joining.
+[2026-04-22 18:02:03,805] 386 root - INFO - Stop marker encountered: 'IN WITNESS whereof, the said________________________ _________ Company, acting through its partner, Shri __________________________ and the Agent, the said Shri_________________ _________ have hereunto signed at _________ the day and the year first above-written.'. Stopping parse.
+[2026-04-22 18:02:03,813] 441 root - INFO - Saved 2 clauses to data\parsed\cancellation-of-an-agreement_clauses.json
+[2026-04-22 18:02:03,816] 442 root - INFO - Source file recorded: cancellation-of-an-agreement.docx
+[2026-04-22 18:02:03,817] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:02:03,817] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:02:03,817] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:02:03,818] 90 root - INFO - JSON source: data\parsed\cancellation-of-an-agreement_clauses.json
+[2026-04-22 18:02:03,818] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:02:03,818] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:02:04,856] 116 root - INFO - Inserted 2 records into collection 'contract_clauses'.
+[2026-04-22 18:02:04,858] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:02:04,859] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:02:04,859] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:02:41,605] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:02:41,605] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:02:41,606] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:02:41,606] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:02:41,658] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 18:02:41,658] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 18:02:41,663] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 18:02:41,666] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 18:02:41,673] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:02:41,673] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:02:41,674] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:02:41,674] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:02:41,674] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:02:41,675] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:02:41,675] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:02:41,675] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:02:42,280] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 18:02:42,280] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:02:42,281] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:02:42,281] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:03:57,740] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2026-04-22 18:04:39,375] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[2026-04-22 18:04:41,503] 112 datasets - INFO - TensorFlow version 2.21.0 available.
+[2026-04-22 18:04:50,500] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+[2026-04-22 18:04:56,641] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+[2026-04-22 18:06:23,556] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:06:23,556] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:06:23,557] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:06:23,557] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:23,575] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 18:06:23,576] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 18:06:23,580] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 18:06:23,582] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 18:06:23,585] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:23,585] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:23,585] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:06:23,585] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:06:23,586] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:06:23,586] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:23,586] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:06:23,586] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:06:23,987] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 18:06:23,987] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:06:23,987] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:06:23,987] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:06:49,292] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:06:49,292] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:06:49,293] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:06:49,293] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:49,311] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 18:06:49,311] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 18:06:49,314] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 18:06:49,316] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 18:06:49,320] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:49,320] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:49,320] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:06:49,320] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:06:49,320] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:06:49,321] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:49,321] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:06:49,321] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:06:49,629] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 18:06:49,629] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:06:49,629] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:06:49,630] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:06:53,287] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:06:53,287] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:06:53,287] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:06:53,287] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:53,305] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 18:06:53,306] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 18:06:53,309] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 18:06:53,312] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 18:06:53,315] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:53,315] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:06:53,315] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:06:53,315] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:06:53,315] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:06:53,315] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:06:53,315] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:06:53,315] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:06:53,625] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 18:06:53,625] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:06:53,625] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:06:53,626] 36 root - INFO - Data ingestion pipeline completed successfully.

@@ -1,0 +1,20 @@
+[2026-04-22 17:57:04,502] 16 root - INFO - Data ingestion pipeline started.
+[2026-04-22 17:57:04,502] 19 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 17:57:04,503] 358 root - INFO - Starting clause parsing.
+[2026-04-22 17:57:04,503] 359 root - INFO - Input file: data\raw\loan-agreement.docx
+[2026-04-22 17:57:04,532] 368 root - INFO - Extracted 21 raw non-empty paragraphs from document.
+[2026-04-22 17:57:04,532] 372 root - INFO - Agreement heading detected: Loan Agreement
+[2026-04-22 17:57:04,538] 377 root - INFO - Built 16 logical lines after sentence splitting and joining.
+[2026-04-22 17:57:04,545] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF the parties hereto have hereunto set and subscribed their respective hands the day and year first hereinabove written.'. Stopping parse.
+[2026-04-22 17:57:04,555] 441 root - INFO - Saved 4 clauses to data\parsed\loan-agreement_clauses.json
+[2026-04-22 17:57:04,556] 442 root - INFO - Source file recorded: loan-agreement.docx
+[2026-04-22 17:57:04,556] 24 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 17:57:04,556] 27 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 17:57:04,557] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 17:57:04,557] 90 root - INFO - JSON source: data\parsed\loan-agreement_clauses.json
+[2026-04-22 17:57:04,557] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 17:57:04,557] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 17:57:07,106] 116 root - INFO - Inserted 4 records into collection 'contract_clauses'.
+[2026-04-22 17:57:07,108] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 17:57:07,110] 33 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 17:57:07,111] 35 root - INFO - Data ingestion pipeline completed successfully.

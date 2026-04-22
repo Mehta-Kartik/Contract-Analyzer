@@ -1,0 +1,59 @@
+{
+    "agreement_heading": "LOAN AGREEMENT WITH BANK",
+    "source_file": "loan-agreement-with-bank.docx",
+    "clauses": [
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "1",
+            "clause_title": "",
+            "clause_text": "The bank shall adjust the borrower from time to time against his said business by overdraft as and when needed by the borrower up to a maximum limit of Rupees ………………....... only including all interest and other charges, but nevertheless the liability of borrower shall not be recessed to above maximum amount, if borrowings including interest and other costs, charges and expenditures exceed the aforesaid consented limit.",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "2",
+            "clause_title": "",
+            "clause_text": "The borrower shall pay interest on the said loan or advance at the rate of......... percent.......... on daily balance of said account which shall be debited in his said account on last working day of each English month and forming part of principal and carrying feature interest at said rate.\nIf above stated limit is not availed of by borrower for any reason whatsoever there remains a credit balance favouring the borrower, the borrower shall however remain liable for paying interest at the specified rate on Rs..................",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "3",
+            "clause_title": "",
+            "clause_text": "That account in books of bank shall be final against borrower of the amount or amounts of the bank.\nIn addition to fix interest the borrower shall paying to the bank the following other charges also: (i) usual incidental charges every …… months;\n(ii) usual commissions on other services, i.e. out station cheques, drafts, etc. with other usual; and (iii) Customary charges.",
+            "subclauses": [
+                {
+                    "subclause_id": "ii",
+                    "text": "usual commissions on other services, i.e. out station cheques, drafts, etc. with other usual; and (iii) Customary charges."
+                }
+            ]
+        },
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "4",
+            "clause_title": "",
+            "clause_text": "The Property situated at …………………………………….. bearing number……………………………….. is hereby mortgaged with bank for the purpose of security against this loan.\nThe whole loan is also to be grunted by the borrowed in its person capacity.",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "5",
+            "clause_title": "",
+            "clause_text": "This agreement shall be enforceable for a period of one years from date hereof, unless otherwise increased or terminated by the bank.\nThe borrower has to apply for renewal one months advanced before the termination of this agreement .",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "LOAN AGREEMENT WITH BANK",
+            "source_file": "loan-agreement-with-bank.docx",
+            "clause_number": "6",
+            "clause_title": "",
+            "clause_text": "On expiry of period stated in Para 5 above or at any moment later or earlier, the borrower shall pay or cause to be paid to bank per demand the balance then outstanding as owing to the bank per said cash credit account (including of interest and all other charges and expenses) as appearing from the books of the bank which the borrower has agreed to accept as sufficient and conclusive evidence as against him of the amount due from him and in the event of the said demand being neglected and/or not complied with, the bank shall realise the amount or amounts due through civil process along with all expenses and charges actually incurred.",
+            "subclauses": []
+        }
+    ]
+}

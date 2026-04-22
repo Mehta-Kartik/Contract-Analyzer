@@ -1,0 +1,38 @@
+{
+    "agreement_heading": "Loan Agreement",
+    "source_file": "loan-agreement.docx",
+    "clauses": [
+        {
+            "agreement_heading": "Loan Agreement",
+            "source_file": "loan-agreement.docx",
+            "clause_number": "1",
+            "clause_title": "",
+            "clause_text": "The Borrower hereto, being in need of money, has requested the Lender to give her an interest-free loan of Rs.___________/- (Rupees _________________________ only) to enable her to purchase a residential flat, to which the Lender has agreed.",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "Loan Agreement",
+            "source_file": "loan-agreement.docx",
+            "clause_number": "2",
+            "clause_title": "",
+            "clause_text": "The said loan is required by the Borrower for a period of ____ years, commencing from __/__/1999 and terminating on __/__/_____.",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "Loan Agreement",
+            "source_file": "loan-agreement.docx",
+            "clause_number": "3",
+            "clause_title": "",
+            "clause_text": "The Borrower hereby agrees and undertakes to return the loan of Rs.___________/- (Rupees ______________________ only), in installments, within the aforesaid period of ____ years and gives her personal guarantee for the same.",
+            "subclauses": []
+        },
+        {
+            "agreement_heading": "Loan Agreement",
+            "source_file": "loan-agreement.docx",
+            "clause_number": "4",
+            "clause_title": "",
+            "clause_text": "The terms and conditions of this Agreement are arrived at by the mutual consent of the parties hereto.",
+            "subclauses": []
+        }
+    ]
+}

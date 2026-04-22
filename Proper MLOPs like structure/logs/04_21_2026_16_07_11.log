@@ -1,0 +1,230 @@
+[2026-04-21 16:08:23,164] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:08:23,165] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:08:23,165] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:08:23,165] 41 root - INFO - Input file: data\raw\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed.docx
+[2026-04-21 16:08:23,200] 51 root - INFO - Extracted 27 non-empty lines from document.
+[2026-04-21 16:08:23,201] 62 root - INFO - Agreement heading detected: Agreement between Builder and a Broker for Selling the Flats to be constructed
+[2026-04-21 16:08:23,201] 69 root - INFO - Stop marker encountered: 'Now This Agreement Witnesses As Follows:'. Stopping parse.
+[2026-04-21 16:08:23,204] 130 root - INFO - Saved 0 clauses to data\parsed\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed_clauses.json
+[2026-04-21 16:08:23,205] 131 root - INFO - Source file recorded: agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed.docx
+[2026-04-21 16:08:23,205] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:08:23,205] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:08:23,205] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:08:23,205] 90 root - INFO - JSON source: data\parsed\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed_clauses.json
+[2026-04-21 16:08:23,205] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:08:23,205] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:08:23,206] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-21 16:08:23,206] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:08:23,206] 34 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-21 16:08:46,482] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:08:46,483] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:08:46,483] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:08:46,483] 41 root - INFO - Input file: data\raw\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed.docx
+[2026-04-21 16:08:46,492] 51 root - INFO - Extracted 27 non-empty lines from document.
+[2026-04-21 16:08:46,493] 62 root - INFO - Agreement heading detected: Agreement between Builder and a Broker for Selling the Flats to be constructed
+[2026-04-21 16:08:46,493] 69 root - INFO - Stop marker encountered: 'Now This Agreement Witnesses As Follows:'. Stopping parse.
+[2026-04-21 16:08:46,496] 130 root - INFO - Saved 0 clauses to data\parsed\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed_clauses.json
+[2026-04-21 16:08:46,496] 131 root - INFO - Source file recorded: agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed.docx
+[2026-04-21 16:08:46,496] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:08:46,497] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:08:46,497] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:08:46,497] 90 root - INFO - JSON source: data\parsed\agreement-between-builder-and-a-broker-for-selling-the-flats-to-be-constructed_clauses.json
+[2026-04-21 16:08:46,497] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:08:46,497] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:08:46,497] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-21 16:08:46,497] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:08:46,498] 34 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-21 16:08:54,310] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:08:54,310] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:08:54,310] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:08:54,311] 41 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-21 16:08:54,356] 51 root - INFO - Extracted 2 non-empty lines from document.
+[2026-04-21 16:08:54,356] 62 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-21 16:08:54,356] 69 root - INFO - Stop marker encountered: 'This agreement is made on this................. Day of............ 2018, 
+
+Between 
+
+Mr……………………………………………………………....S/o………………………………………………………..…doing business at ...................................................................................................................under the name and style of …………….(hereinafter called the manufacturer which term shall include its heirs-in-interest) of the One Part 
+
+                                                          And 
+
+chin&chin Co, carrying on business at.............................................................. (Hereinafter called the dealer which term shall include his heirs and assigns) of the Other Part to the following effect: 
+
+
+
+1. The manufacturer shall be supplying and the dealer shall sell the whole of the seller's subsisting stock of...................................................................... and other goods as manufactured hereafter without any exception or retention thereof. 
+
+2. The goods so supplied shall be sold by the dealer strictly at listed prices to retailers for which he will be entitled to a commission of................% on all listed prices exclusive/inclusive of all railway freight (as may be consented). 
+
+3. If any part of goods shall remain unsold for over………... Months after supply /delivery, the dealer shall return the stock to the manufacture. 
+
+4. The dealer guarantees a minimum sale valuing at Rs...Annually. If the sale falls short by 25% or more for any consecutive two years or more, this agreement may at the option of either party be cancelled. 
+
+5. The manufacturer shall not, during continuance of this covenant, appoint any other wholesale dealer concerning identical or renovated products nor make nor supply nor to anyone sell any portion thereto other than the dealer. 
+
+6. Subject to what is stated in paragraph 4 hereof, this covenant shall remain enforceable for five years subject to the opting of either party as laid therein and also subject to condition that the dealer shall not, during the currency of this agreement sell or encourage the sale of identical or similar products of any other manufacturer. 
+
+7. Any differences and controversies concerning these presents or rights or duties of parties hereto in relation to transactions covered by this agreement or arising out of or in relation to these presents shall be referred to sole arbitrator Mr…………………………………………………………………………………………………....,for settlement whose award shall bind and final on the parties. 
+
+
+
+In witness whereof the parties hereto have executed these presents on the day, month and year first above-written. 
+
+
+
+IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________. 
+
+Signed, sealed and delivered by ……………………………………………..the manufacturer and by………………………………………………………..………. in the presence of witness 
+
+DATE: 
+
+PLACE: 
+
+
+
+WITNESSESS:- 
+
+
+
+1………………………..
+
+
+
+2………………………..'. Stopping parse.
+[2026-04-21 16:08:54,361] 130 root - INFO - Saved 0 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-21 16:08:54,361] 131 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-21 16:08:54,361] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:08:54,361] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:08:54,361] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:08:54,361] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-21 16:08:54,361] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:08:54,362] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:08:54,362] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-21 16:08:54,362] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:08:54,362] 34 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-21 16:08:55,008] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:08:55,008] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:08:55,008] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:08:55,008] 41 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-21 16:08:55,020] 51 root - INFO - Extracted 2 non-empty lines from document.
+[2026-04-21 16:08:55,020] 62 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-21 16:08:55,020] 69 root - INFO - Stop marker encountered: 'This agreement is made on this................. Day of............ 2018, 
+
+Between 
+
+Mr……………………………………………………………....S/o………………………………………………………..…doing business at ...................................................................................................................under the name and style of …………….(hereinafter called the manufacturer which term shall include its heirs-in-interest) of the One Part 
+
+                                                          And 
+
+chin&chin Co, carrying on business at.............................................................. (Hereinafter called the dealer which term shall include his heirs and assigns) of the Other Part to the following effect: 
+
+
+
+1. The manufacturer shall be supplying and the dealer shall sell the whole of the seller's subsisting stock of...................................................................... and other goods as manufactured hereafter without any exception or retention thereof. 
+
+2. The goods so supplied shall be sold by the dealer strictly at listed prices to retailers for which he will be entitled to a commission of................% on all listed prices exclusive/inclusive of all railway freight (as may be consented). 
+
+3. If any part of goods shall remain unsold for over………... Months after supply /delivery, the dealer shall return the stock to the manufacture. 
+
+4. The dealer guarantees a minimum sale valuing at Rs...Annually. If the sale falls short by 25% or more for any consecutive two years or more, this agreement may at the option of either party be cancelled. 
+
+5. The manufacturer shall not, during continuance of this covenant, appoint any other wholesale dealer concerning identical or renovated products nor make nor supply nor to anyone sell any portion thereto other than the dealer. 
+
+6. Subject to what is stated in paragraph 4 hereof, this covenant shall remain enforceable for five years subject to the opting of either party as laid therein and also subject to condition that the dealer shall not, during the currency of this agreement sell or encourage the sale of identical or similar products of any other manufacturer. 
+
+7. Any differences and controversies concerning these presents or rights or duties of parties hereto in relation to transactions covered by this agreement or arising out of or in relation to these presents shall be referred to sole arbitrator Mr…………………………………………………………………………………………………....,for settlement whose award shall bind and final on the parties. 
+
+
+
+In witness whereof the parties hereto have executed these presents on the day, month and year first above-written. 
+
+
+
+IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________. 
+
+Signed, sealed and delivered by ……………………………………………..the manufacturer and by………………………………………………………..………. in the presence of witness 
+
+DATE: 
+
+PLACE: 
+
+
+
+WITNESSESS:- 
+
+
+
+1………………………..
+
+
+
+2………………………..'. Stopping parse.
+[2026-04-21 16:08:55,024] 130 root - INFO - Saved 0 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-21 16:08:55,024] 131 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-21 16:08:55,024] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:08:55,025] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:08:55,025] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:08:55,025] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-21 16:08:55,025] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:08:55,025] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:08:55,026] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-21 16:08:55,026] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:08:55,026] 34 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-21 16:10:44,703] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:10:44,703] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:10:44,704] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:10:44,704] 41 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-21 16:10:44,730] 51 root - INFO - Extracted 14 non-empty lines from document.
+[2026-04-21 16:10:44,730] 62 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-21 16:10:44,765] 69 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________. 
+
+
+
+DATE: 
+
+
+
+PLACE: 
+
+
+
+WITNESSESS:-
+
+
+
+1. PARTY OF FIRST PART'. Stopping parse.
+[2026-04-21 16:10:44,769] 130 root - INFO - Saved 5 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-21 16:10:44,770] 131 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-21 16:10:44,770] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:10:44,770] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:10:44,770] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:10:44,770] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-21 16:10:44,770] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:10:44,770] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:10:46,417] 116 root - INFO - Inserted 8 records into collection 'contract_clauses'.
+[2026-04-21 16:10:46,418] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-21 16:10:46,418] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:10:46,419] 34 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-21 16:26:02,975] 15 root - INFO - Data ingestion pipeline started.
+[2026-04-21 16:26:02,976] 18 root - INFO - Step 1: Clause parsing started.
+[2026-04-21 16:26:02,976] 40 root - INFO - Starting clause parsing.
+[2026-04-21 16:26:02,976] 41 root - INFO - Input file: data\raw\agreement-between-publisher-and-author.docx
+[2026-04-21 16:26:02,992] 51 root - INFO - Extracted 21 non-empty lines from document.
+[2026-04-21 16:26:02,992] 62 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PUBLISHER AND AUTHOR
+[2026-04-21 16:26:02,993] 69 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________. 
+
+Signed, sealed and delivered by Director Mr. ............ pursuant to Board resolution of AB & Co Ltd., dated............ 
+
+Signed, sealed and delivered by Mr. ATUL DEHMUKH author'. Stopping parse.
+[2026-04-21 16:26:02,999] 130 root - INFO - Saved 10 clauses to data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-21 16:26:02,999] 131 root - INFO - Source file recorded: agreement-between-publisher-and-author.docx
+[2026-04-21 16:26:02,999] 23 root - INFO - Step 1: Clause parsing completed.
+[2026-04-21 16:26:02,999] 26 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-21 16:26:03,000] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-21 16:26:03,000] 90 root - INFO - JSON source: data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-21 16:26:03,000] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-21 16:26:03,000] 92 root - INFO - Collection name: contract_clauses
+[2026-04-21 16:26:03,896] 116 root - INFO - Inserted 12 records into collection 'contract_clauses'.
+[2026-04-21 16:26:03,896] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-21 16:26:03,897] 32 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-21 16:26:03,897] 34 root - INFO - Data ingestion pipeline completed successfully.

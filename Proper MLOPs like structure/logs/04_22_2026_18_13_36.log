@@ -1,0 +1,60 @@
+[2026-04-22 18:13:46,803] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:13:46,804] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:13:46,804] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:13:46,804] 359 root - INFO - Input file: data\raw\agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:13:46,832] 368 root - INFO - Extracted 17 raw non-empty paragraphs from document.
+[2026-04-22 18:13:46,832] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PRINCIPAL
+[2026-04-22 18:13:46,835] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-22 18:13:46,837] 386 root - INFO - Stop marker encountered: 'Now the party of first part appoints the party of other part as its monopoly agents for clearing lifting and handling of goods import by them on following conditions:-'. Stopping parse.
+[2026-04-22 18:13:46,843] 441 root - INFO - Saved 1 clauses to data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:13:46,843] 442 root - INFO - Source file recorded: agreement-between-principal-and-monopoly-agent.docx
+[2026-04-22 18:13:46,843] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:13:46,843] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:13:46,844] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:13:46,844] 90 root - INFO - JSON source: data\parsed\agreement-between-principal-and-monopoly-agent_clauses.json
+[2026-04-22 18:13:46,844] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:13:46,844] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:13:47,500] 116 root - INFO - Inserted 1 records into collection 'contract_clauses'.
+[2026-04-22 18:13:47,501] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-22 18:13:47,501] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:13:47,501] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:14:17,353] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:14:17,354] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:14:17,354] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:14:17,354] 359 root - INFO - Input file: data\raw\agreement-for-appointment-of-a-broker-for-selling-a-house.docx
+[2026-04-22 18:14:17,368] 368 root - INFO - Extracted 24 raw non-empty paragraphs from document.
+[2026-04-22 18:14:17,368] 372 root - INFO - Agreement heading detected: Agreement for Appointment of a Broker for Selling a House
+[2026-04-22 18:14:17,370] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-22 18:14:17,371] 386 root - INFO - Stop marker encountered: 'Where as the owner is the absolute owner of the property described in the Schedule hereunder written and he wants to sell the same and for that purpose he requires the services of a broker. and Whereas the broker, who is a reputed broker dealing in real estate in the area has shown his willingness to sell the said property.'. Stopping parse.
+[2026-04-22 18:14:17,378] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-for-appointment-of-a-broker-for-selling-a-house_clauses.json
+[2026-04-22 18:14:17,378] 442 root - INFO - Source file recorded: agreement-for-appointment-of-a-broker-for-selling-a-house.docx
+[2026-04-22 18:14:17,378] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-22 18:14:17,379] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:14:17,379] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:14:17,379] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:14:17,379] 90 root - INFO - JSON source: data\parsed\agreement-for-appointment-of-a-broker-for-selling-a-house_clauses.json
+[2026-04-22 18:14:17,379] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:14:17,379] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:14:17,380] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-22 18:14:17,380] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:14:17,380] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-22 18:14:44,578] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-22 18:14:44,578] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-22 18:14:44,578] 358 root - INFO - Starting clause parsing.
+[2026-04-22 18:14:44,578] 359 root - INFO - Input file: data\raw\agreement-for-appointment-of-a-broker-for-selling-a-house.docx
+[2026-04-22 18:14:44,591] 368 root - INFO - Extracted 24 raw non-empty paragraphs from document.
+[2026-04-22 18:14:44,591] 372 root - INFO - Agreement heading detected: Agreement for Appointment of a Broker for Selling a House
+[2026-04-22 18:14:44,594] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-22 18:14:44,595] 386 root - INFO - Stop marker encountered: 'Where as the owner is the absolute owner of the property described in the Schedule hereunder written and he wants to sell the same and for that purpose he requires the services of a broker. and Whereas the broker, who is a reputed broker dealing in real estate in the area has shown his willingness to sell the said property.'. Stopping parse.
+[2026-04-22 18:14:44,602] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-for-appointment-of-a-broker-for-selling-a-house_clauses.json
+[2026-04-22 18:14:44,602] 442 root - INFO - Source file recorded: agreement-for-appointment-of-a-broker-for-selling-a-house.docx
+[2026-04-22 18:14:44,603] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-22 18:14:44,603] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-22 18:14:44,603] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-22 18:14:44,603] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-22 18:14:44,603] 90 root - INFO - JSON source: data\parsed\agreement-for-appointment-of-a-broker-for-selling-a-house_clauses.json
+[2026-04-22 18:14:44,603] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-22 18:14:44,603] 92 root - INFO - Collection name: contract_clauses
+[2026-04-22 18:14:44,603] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-22 18:14:44,604] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-22 18:14:44,604] 36 root - INFO - Data ingestion pipeline completed successfully.
