@@ -1,0 +1,95 @@
+[2026-04-23 15:51:31,502] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2026-04-23 15:51:52,469] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[2026-04-23 15:51:53,330] 112 datasets - INFO - TensorFlow version 2.21.0 available.
+[2026-04-23 15:51:55,486] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+[2026-04-23 15:52:33,130] 90 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:52:33,588] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:52:36,438] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from ArchitRastogi/BGE-Small-LegalEmbeddings-USCode.
+[2026-04-23 15:53:27,392] 95 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:53:27,392] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:53:27,392] 359 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:53:27,419] 368 root - INFO - Extracted 2 raw non-empty paragraphs from document.
+[2026-04-23 15:53:27,419] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-23 15:53:27,420] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-23 15:53:27,421] 386 root - INFO - Stop marker encountered: 'In witness whereof the parties hereto have executed these presents on the day, month and year first above-written.'. Stopping parse.
+[2026-04-23 15:53:27,425] 441 root - INFO - Saved 7 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:53:27,426] 442 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:53:27,426] 100 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:53:27,426] 103 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:53:27,426] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:53:27,426] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:53:27,426] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:53:27,426] 92 root - INFO - Collection name: agreement-between-manufacturer-and-dealer_clauses
+[2026-04-23 15:54:11,562] 90 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:54:11,567] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:54:13,185] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from ArchitRastogi/BGE-Small-LegalEmbeddings-USCode.
+[2026-04-23 15:54:19,440] 95 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:54:19,441] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:54:19,441] 359 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:54:19,457] 368 root - INFO - Extracted 2 raw non-empty paragraphs from document.
+[2026-04-23 15:54:19,457] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-23 15:54:19,459] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-23 15:54:19,460] 386 root - INFO - Stop marker encountered: 'In witness whereof the parties hereto have executed these presents on the day, month and year first above-written.'. Stopping parse.
+[2026-04-23 15:54:19,464] 441 root - INFO - Saved 7 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:54:19,464] 442 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:54:19,465] 100 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:54:19,465] 103 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:54:19,465] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:54:19,465] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:54:19,465] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:54:19,465] 92 root - INFO - Collection name: agreement-between-manufacturer-and-dealer_clauses
+[2026-04-23 15:54:23,080] 90 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:54:23,086] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:54:24,651] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from ArchitRastogi/BGE-Small-LegalEmbeddings-USCode.
+[2026-04-23 15:54:30,751] 95 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:54:30,752] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:54:30,752] 359 root - INFO - Input file: data\raw\agreement-between-publisher-and-author.docx
+[2026-04-23 15:54:30,773] 368 root - INFO - Extracted 21 raw non-empty paragraphs from document.
+[2026-04-23 15:54:30,773] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN PUBLISHER AND AUTHOR
+[2026-04-23 15:54:30,779] 377 root - INFO - Built 59 logical lines after sentence splitting and joining.
+[2026-04-23 15:54:30,780] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 15:54:30,785] 441 root - INFO - Saved 16 clauses to data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-23 15:54:30,786] 442 root - INFO - Source file recorded: agreement-between-publisher-and-author.docx
+[2026-04-23 15:54:30,786] 100 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:54:30,786] 103 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:54:30,786] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:54:30,786] 90 root - INFO - JSON source: data\parsed\agreement-between-publisher-and-author_clauses.json
+[2026-04-23 15:54:30,786] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-publisher-and-author
+[2026-04-23 15:54:30,786] 92 root - INFO - Collection name: agreement-between-publisher-and-author_clauses
+[2026-04-23 15:54:32,533] 116 root - INFO - Inserted 18 records into collection 'agreement-between-publisher-and-author_clauses'.
+[2026-04-23 15:54:32,533] 117 root - INFO - ChromaDB stored at: vectorstore\agreement-between-publisher-and-author
+[2026-04-23 15:54:32,534] 110 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 15:54:32,534] 112 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 15:54:58,608] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 15:55:09,183] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 15:55:32,857] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 15:55:52,098] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 16:09:23,204] 90 root - INFO - Data ingestion pipeline started.
+[2026-04-23 16:09:23,211] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 16:09:24,797] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from ArchitRastogi/BGE-Small-LegalEmbeddings-USCode.
+[2026-04-23 16:09:31,148] 95 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 16:09:31,148] 358 root - INFO - Starting clause parsing.
+[2026-04-23 16:09:31,148] 359 root - INFO - Input file: data\raw\cancellation-of-an-agreement.docx
+[2026-04-23 16:09:31,164] 368 root - INFO - Extracted 16 raw non-empty paragraphs from document.
+[2026-04-23 16:09:31,164] 372 root - INFO - Agreement heading detected: CANCELLATION OF AN AGREEMENT
+[2026-04-23 16:09:31,167] 377 root - INFO - Built 14 logical lines after sentence splitting and joining.
+[2026-04-23 16:09:31,167] 386 root - INFO - Stop marker encountered: 'IN WITNESS whereof, the said________________________ _________ Company, acting through its partner, Shri __________________________ and the Agent, the said Shri_________________ _________ have hereunto signed at _________ the day and the year first above-written.'. Stopping parse.
+[2026-04-23 16:09:31,170] 441 root - INFO - Saved 2 clauses to data\parsed\cancellation-of-an-agreement_clauses.json
+[2026-04-23 16:09:31,171] 442 root - INFO - Source file recorded: cancellation-of-an-agreement.docx
+[2026-04-23 16:09:31,171] 100 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 16:09:31,171] 103 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 16:09:31,171] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 16:09:31,171] 90 root - INFO - JSON source: data\parsed\cancellation-of-an-agreement_clauses.json
+[2026-04-23 16:09:31,171] 91 root - INFO - ChromaDB directory: vectorstore\cancellation-of-an-agreement
+[2026-04-23 16:09:31,171] 92 root - INFO - Collection name: cancellation-of-an-agreement_clauses
+[2026-04-23 16:09:31,624] 116 root - INFO - Inserted 2 records into collection 'cancellation-of-an-agreement_clauses'.
+[2026-04-23 16:09:31,624] 117 root - INFO - ChromaDB stored at: vectorstore\cancellation-of-an-agreement
+[2026-04-23 16:09:31,624] 110 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 16:09:31,624] 112 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 16:09:41,756] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 16:10:00,609] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 16:10:25,703] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 16:11:08,247] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 16:12:48,766] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

@@ -77,7 +77,7 @@ def build_records(data: dict) -> list:
     return records
 
 
-def ingest_to_chroma(json_path: str, chroma_db_dir: str, collection_name: str) -> None:
+def ingest_to_chroma(json_path: str, chroma_db_dir: str, collection_name: str,embedding_function) -> None:
     """
     Loads clause JSON and inserts all records into a ChromaDB collection.
 
@@ -101,7 +101,7 @@ def ingest_to_chroma(json_path: str, chroma_db_dir: str, collection_name: str) -
     os.makedirs(chroma_db_dir, exist_ok=True)
 
     client = chromadb.PersistentClient(path=chroma_db_dir)
-    collection = client.get_or_create_collection(name=collection_name)
+    collection = client.get_or_create_collection(name=collection_name,embedding_function=embedding_function)
 
     ids = [r["id"] for r in records]
     documents = [r["document"] for r in records]

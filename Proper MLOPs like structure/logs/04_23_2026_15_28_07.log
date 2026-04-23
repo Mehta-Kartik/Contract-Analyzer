@@ -1,0 +1,73 @@
+[2026-04-23 15:28:13,022] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2026-04-23 15:29:01,864] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[2026-04-23 15:29:04,823] 112 datasets - INFO - TensorFlow version 2.21.0 available.
+[2026-04-23 15:29:09,529] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+[2026-04-23 15:29:30,312] 102 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:29:30,827] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:29:35,497] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:29:56,866] 107 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:29:56,867] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:29:56,867] 359 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:29:56,899] 368 root - INFO - Extracted 2 raw non-empty paragraphs from document.
+[2026-04-23 15:29:56,899] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-23 15:29:56,903] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-23 15:29:56,904] 386 root - INFO - Stop marker encountered: 'In witness whereof the parties hereto have executed these presents on the day, month and year first above-written.'. Stopping parse.
+[2026-04-23 15:29:56,913] 441 root - INFO - Saved 7 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:29:56,914] 442 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:29:56,914] 112 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:29:56,914] 115 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:29:56,914] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:29:56,914] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:29:56,915] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:29:56,915] 92 root - INFO - Collection name: agreement-between-manufacturer-and-dealer_clauses
+[2026-04-23 15:29:57,438] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:29:58,433] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:30:53,212] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:30:53,926] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:31:25,999] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:31:26,808] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:32:12,990] 116 root - INFO - Inserted 7 records into collection 'agreement-between-manufacturer-and-dealer_clauses'.
+[2026-04-23 15:32:12,993] 117 root - INFO - ChromaDB stored at: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:32:12,995] 122 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 15:32:12,996] 124 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 15:32:43,751] 102 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:32:43,758] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:32:45,887] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:33:16,062] 107 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:33:16,074] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:33:16,074] 359 root - INFO - Input file: data\raw\agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:33:16,228] 368 root - INFO - Extracted 2 raw non-empty paragraphs from document.
+[2026-04-23 15:33:16,229] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN MANUFACTURER AND DEALER
+[2026-04-23 15:33:16,233] 377 root - INFO - Built 23 logical lines after sentence splitting and joining.
+[2026-04-23 15:33:16,235] 386 root - INFO - Stop marker encountered: 'In witness whereof the parties hereto have executed these presents on the day, month and year first above-written.'. Stopping parse.
+[2026-04-23 15:33:16,254] 441 root - INFO - Saved 7 clauses to data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:33:16,254] 442 root - INFO - Source file recorded: agreement-between-manufacturer-and-dealer.docx
+[2026-04-23 15:33:16,254] 112 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:33:16,254] 115 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:33:16,255] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:33:16,255] 90 root - INFO - JSON source: data\parsed\agreement-between-manufacturer-and-dealer_clauses.json
+[2026-04-23 15:33:16,255] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:33:16,255] 92 root - INFO - Collection name: agreement-between-manufacturer-and-dealer_clauses
+[2026-04-23 15:33:16,446] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:33:17,104] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:34:19,893] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:34:20,589] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:34:46,702] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:34:47,365] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:35:07,558] 116 root - INFO - Inserted 7 records into collection 'agreement-between-manufacturer-and-dealer_clauses'.
+[2026-04-23 15:35:07,566] 117 root - INFO - ChromaDB stored at: vectorstore\agreement-between-manufacturer-and-dealer
+[2026-04-23 15:35:07,572] 122 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 15:35:07,573] 124 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 15:35:19,976] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:35:21,585] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:35:45,116] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:35:45,771] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:36:14,444] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+[2026-04-23 15:36:42,693] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:36:44,413] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:37:17,133] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:37:17,894] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:37:19,356] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:37:21,602] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.

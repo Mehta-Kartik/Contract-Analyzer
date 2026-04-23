@@ -1,0 +1,119 @@
+[2026-04-23 14:22:40,305] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-23 14:22:40,306] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 14:22:40,306] 358 root - INFO - Starting clause parsing.
+[2026-04-23 14:22:40,307] 359 root - INFO - Input file: data\raw\agreement-between-author-and-publisher.docx
+[2026-04-23 14:22:40,402] 368 root - INFO - Extracted 10 raw non-empty paragraphs from document.
+[2026-04-23 14:22:40,403] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN AUTHOR AND PUBLISHER
+[2026-04-23 14:22:40,415] 377 root - INFO - Built 27 logical lines after sentence splitting and joining.
+[2026-04-23 14:22:40,437] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF this agreement has been executed by the parties hereto on the dates following their signatures.'. Stopping parse.
+[2026-04-23 14:22:40,447] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-between-author-and-publisher_clauses.json
+[2026-04-23 14:22:40,448] 442 root - INFO - Source file recorded: agreement-between-author-and-publisher.docx
+[2026-04-23 14:22:40,449] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-23 14:22:40,449] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 14:22:40,449] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 14:22:40,450] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 14:22:40,450] 90 root - INFO - JSON source: data\parsed\agreement-between-author-and-publisher_clauses.json
+[2026-04-23 14:22:40,450] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-23 14:22:40,451] 92 root - INFO - Collection name: contract_clauses
+[2026-04-23 14:22:40,452] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-23 14:22:40,453] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 14:22:40,453] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 14:22:49,187] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-23 14:22:49,188] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 14:22:49,189] 358 root - INFO - Starting clause parsing.
+[2026-04-23 14:22:49,189] 359 root - INFO - Input file: data\raw\agreement-between-author-and-publisher.docx
+[2026-04-23 14:22:49,280] 368 root - INFO - Extracted 10 raw non-empty paragraphs from document.
+[2026-04-23 14:22:49,281] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN AUTHOR AND PUBLISHER
+[2026-04-23 14:22:49,291] 377 root - INFO - Built 27 logical lines after sentence splitting and joining.
+[2026-04-23 14:22:49,354] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF this agreement has been executed by the parties hereto on the dates following their signatures.'. Stopping parse.
+[2026-04-23 14:22:49,371] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-between-author-and-publisher_clauses.json
+[2026-04-23 14:22:49,373] 442 root - INFO - Source file recorded: agreement-between-author-and-publisher.docx
+[2026-04-23 14:22:49,373] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-23 14:22:49,374] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 14:22:49,374] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 14:22:49,374] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 14:22:49,375] 90 root - INFO - JSON source: data\parsed\agreement-between-author-and-publisher_clauses.json
+[2026-04-23 14:22:49,375] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-23 14:22:49,376] 92 root - INFO - Collection name: contract_clauses
+[2026-04-23 14:22:49,379] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-23 14:22:49,380] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 14:22:49,381] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 14:22:58,504] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-23 14:22:58,504] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 14:22:58,505] 358 root - INFO - Starting clause parsing.
+[2026-04-23 14:22:58,505] 359 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:22:58,570] 368 root - INFO - Extracted 14 raw non-empty paragraphs from document.
+[2026-04-23 14:22:58,570] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-23 14:22:58,579] 377 root - INFO - Built 44 logical lines after sentence splitting and joining.
+[2026-04-23 14:22:58,598] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 14:22:58,607] 441 root - INFO - Saved 14 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:22:58,607] 442 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:22:58,608] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 14:22:58,608] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 14:22:58,608] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 14:22:58,609] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:22:58,609] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-23 14:22:58,609] 92 root - INFO - Collection name: contract_clauses
+[2026-04-23 14:24:46,853] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-23 14:24:46,853] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 14:24:46,854] 358 root - INFO - Starting clause parsing.
+[2026-04-23 14:24:46,854] 359 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:24:46,917] 368 root - INFO - Extracted 14 raw non-empty paragraphs from document.
+[2026-04-23 14:24:46,917] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-23 14:24:46,928] 377 root - INFO - Built 43 logical lines after sentence splitting and joining.
+[2026-04-23 14:24:46,947] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 14:24:46,961] 441 root - INFO - Saved 13 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:24:46,961] 442 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:24:46,961] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 14:24:46,962] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 14:24:46,962] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 14:24:46,962] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:24:46,962] 91 root - INFO - ChromaDB directory: vectorstore\chroma_db
+[2026-04-23 14:24:46,963] 92 root - INFO - Collection name: contract_clauses
+[2026-04-23 14:24:50,597] 116 root - INFO - Inserted 18 records into collection 'contract_clauses'.
+[2026-04-23 14:24:50,598] 117 root - INFO - ChromaDB stored at: vectorstore\chroma_db
+[2026-04-23 14:24:50,600] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 14:24:50,601] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 14:25:11,054] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:38:16,337] 17 root - INFO - Data ingestion pipeline started.
+[2026-04-23 14:38:16,337] 20 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 14:38:16,338] 358 root - INFO - Starting clause parsing.
+[2026-04-23 14:38:16,338] 359 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:38:16,455] 368 root - INFO - Extracted 14 raw non-empty paragraphs from document.
+[2026-04-23 14:38:16,455] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-23 14:38:16,476] 377 root - INFO - Built 43 logical lines after sentence splitting and joining.
+[2026-04-23 14:38:16,512] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 14:38:16,534] 441 root - INFO - Saved 13 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:38:16,535] 442 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-23 14:38:16,536] 25 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 14:38:16,537] 28 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 14:38:16,538] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 14:38:16,538] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 14:38:16,539] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-film-producers-and-distributors
+[2026-04-23 14:38:16,540] 92 root - INFO - Collection name: agreement-between-film-producers-and-distributors_clauses
+[2026-04-23 14:38:19,198] 116 root - INFO - Inserted 18 records into collection 'agreement-between-film-producers-and-distributors_clauses'.
+[2026-04-23 14:38:19,201] 117 root - INFO - ChromaDB stored at: vectorstore\agreement-between-film-producers-and-distributors
+[2026-04-23 14:38:19,202] 34 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 14:38:19,203] 36 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 14:38:36,070] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:38:52,103] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:54:52,330] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:55:04,631] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:57:36,490] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:57:52,665] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 14:58:34,378] 1025 httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-04-23 15:02:54,877] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2026-04-23 15:03:41,315] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[2026-04-23 15:03:44,020] 112 datasets - INFO - TensorFlow version 2.21.0 available.
+[2026-04-23 15:03:47,502] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+[2026-04-23 15:05:04,772] 95 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:05:05,292] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:05:11,436] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from zeroentropy/zembed-1.
+[2026-04-23 15:05:23,795] 1729 huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2026-04-23 15:05:23,795] 1729 huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2026-04-23 15:06:15,619] 507 huggingface_hub.file_download - WARNING - Error while downloading from https://huggingface.co/zeroentropy/zembed-1/resolve/10378878bba40172305a1a979db64a413ab7da7b/model-00001-of-00002.safetensors: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+Trying to resume download...
+[2026-04-23 15:06:16,597] 507 huggingface_hub.file_download - WARNING - Error while downloading from https://huggingface.co/zeroentropy/zembed-1/resolve/10378878bba40172305a1a979db64a413ab7da7b/model-00002-of-00002.safetensors: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+Trying to resume download...

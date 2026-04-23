@@ -378,10 +378,10 @@ def parse_clauses(file_path_docx: str, output_path: str) -> str:
 
     clauses: List[Dict[str, Any]] = []
     current_clause: Optional[Dict[str, Any]] = None
-    print("\n\n\n\n\n\n")
+    # print("\n\n\n\n\n\n")
     for line in lines:
-        print("*"*75)
-        print(line)
+        # print("*"*75)
+        # print(line)
         if is_stop_line(line):
             logging.info(f"Stop marker encountered: '{line}'. Stopping parse.")
             break

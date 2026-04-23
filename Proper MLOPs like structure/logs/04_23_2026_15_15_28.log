@@ -1,0 +1,90 @@
+[2026-04-23 15:15:32,731] 161 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2026-04-23 15:16:07,741] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[2026-04-23 15:16:08,644] 112 datasets - INFO - TensorFlow version 2.21.0 available.
+[2026-04-23 15:16:10,679] 149 tensorflow - WARNING - From C:\Users\Jay\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+[2026-04-23 15:16:28,571] 95 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:16:29,026] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:16:29,027] 962 sentence_transformers.base.model - INFO - No modules.json found for sentence-transformers/jina\u2011embeddings\u2011v2\u2011base\u2011en, initializing a new SentenceTransformer model.
+[2026-04-23 15:18:19,667] 92 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:18:19,690] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:18:23,596] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:18:28,636] 1729 huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2026-04-23 15:20:00,084] 97 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:20:00,096] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:20:00,096] 359 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-23 15:20:00,394] 368 root - INFO - Extracted 14 raw non-empty paragraphs from document.
+[2026-04-23 15:20:00,394] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-23 15:20:00,470] 377 root - INFO - Built 43 logical lines after sentence splitting and joining.
+[2026-04-23 15:20:00,485] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 15:20:00,497] 441 root - INFO - Saved 13 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 15:20:00,497] 442 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-23 15:20:00,497] 102 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:20:00,498] 105 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:20:00,498] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:20:00,498] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 15:20:00,498] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-film-producers-and-distributors
+[2026-04-23 15:20:00,498] 92 root - INFO - Collection name: agreement-between-film-producers-and-distributors_clauses
+[2026-04-23 15:21:24,520] 92 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:21:24,625] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:21:28,474] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:21:52,946] 97 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:21:52,951] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:21:52,952] 359 root - INFO - Input file: data\raw\agreement-between-film-producers-and-distributors.docx
+[2026-04-23 15:21:53,137] 368 root - INFO - Extracted 14 raw non-empty paragraphs from document.
+[2026-04-23 15:21:53,138] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FILM PRODUCERS AND DISTRIBUTORS
+[2026-04-23 15:21:53,164] 377 root - INFO - Built 43 logical lines after sentence splitting and joining.
+[2026-04-23 15:21:53,193] 386 root - INFO - Stop marker encountered: 'IN WITNESS WHEREOF, the parties have set their hands this _________ day of __________.'. Stopping parse.
+[2026-04-23 15:21:53,220] 441 root - INFO - Saved 13 clauses to data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 15:21:53,220] 442 root - INFO - Source file recorded: agreement-between-film-producers-and-distributors.docx
+[2026-04-23 15:21:53,221] 102 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:21:53,221] 105 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:21:53,221] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:21:53,222] 90 root - INFO - JSON source: data\parsed\agreement-between-film-producers-and-distributors_clauses.json
+[2026-04-23 15:21:53,222] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-film-producers-and-distributors
+[2026-04-23 15:21:53,222] 92 root - INFO - Collection name: agreement-between-film-producers-and-distributors_clauses
+[2026-04-23 15:23:03,873] 92 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:23:03,886] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:23:07,614] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:23:29,312] 92 root - INFO - Data ingestion pipeline started.
+[2026-04-23 15:23:29,325] 177 sentence_transformers.base.model - INFO - No device provided, using cuda:0
+[2026-04-23 15:23:32,746] 973 sentence_transformers.base.model - INFO - Loading SentenceTransformer model from jinaai/jina-embeddings-v2-base-en.
+[2026-04-23 15:23:37,124] 97 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:23:37,124] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:23:37,124] 359 root - INFO - Input file: data\raw\agreement-between-firm-and-traveling-sales-agent.docx
+[2026-04-23 15:23:37,192] 368 root - INFO - Extracted 3 raw non-empty paragraphs from document.
+[2026-04-23 15:23:37,192] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FIRM AND
+[2026-04-23 15:23:37,200] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-23 15:23:37,201] 386 root - INFO - Stop marker encountered: 'Now, Therefore, This Agreement Witnesses that in consideration of a sum of Rs. _________ p.m. payable by the firm to the said Agent, the Agent hereby undertakes to serve the said Firm as its Traveling Sales Agent within the territory of ______________________________________ on the conditions hereinafter appearing: 1.'. Stopping parse.
+[2026-04-23 15:23:37,207] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-between-firm-and-traveling-sales-agent_clauses.json
+[2026-04-23 15:23:37,207] 442 root - INFO - Source file recorded: agreement-between-firm-and-traveling-sales-agent.docx
+[2026-04-23 15:23:37,207] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-23 15:23:37,207] 102 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:23:37,208] 105 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:23:37,208] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:23:37,208] 90 root - INFO - JSON source: data\parsed\agreement-between-firm-and-traveling-sales-agent_clauses.json
+[2026-04-23 15:23:37,208] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-firm-and-traveling-sales-agent
+[2026-04-23 15:23:37,208] 92 root - INFO - Collection name: agreement-between-firm-and-traveling-sales-agent_clauses
+[2026-04-23 15:23:37,209] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-23 15:23:37,209] 112 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 15:23:37,209] 114 root - INFO - Data ingestion pipeline completed successfully.
+[2026-04-23 15:23:59,328] 97 root - INFO - Step 1: Clause parsing started.
+[2026-04-23 15:23:59,330] 358 root - INFO - Starting clause parsing.
+[2026-04-23 15:23:59,330] 359 root - INFO - Input file: data\raw\agreement-between-firm-and-traveling-sales-agent.docx
+[2026-04-23 15:23:59,402] 368 root - INFO - Extracted 3 raw non-empty paragraphs from document.
+[2026-04-23 15:23:59,402] 372 root - INFO - Agreement heading detected: AGREEMENT BETWEEN FIRM AND
+[2026-04-23 15:23:59,413] 377 root - INFO - Built 29 logical lines after sentence splitting and joining.
+[2026-04-23 15:23:59,413] 386 root - INFO - Stop marker encountered: 'Now, Therefore, This Agreement Witnesses that in consideration of a sum of Rs. _________ p.m. payable by the firm to the said Agent, the Agent hereby undertakes to serve the said Firm as its Traveling Sales Agent within the territory of ______________________________________ on the conditions hereinafter appearing: 1.'. Stopping parse.
+[2026-04-23 15:23:59,419] 441 root - INFO - Saved 0 clauses to data\parsed\agreement-between-firm-and-traveling-sales-agent_clauses.json
+[2026-04-23 15:23:59,419] 442 root - INFO - Source file recorded: agreement-between-firm-and-traveling-sales-agent.docx
+[2026-04-23 15:23:59,419] 445 root - WARNING - No clauses were detected. Check numbering format in the document.
+[2026-04-23 15:23:59,419] 102 root - INFO - Step 1: Clause parsing completed.
+[2026-04-23 15:23:59,420] 105 root - INFO - Step 2: ChromaDB ingestion started.
+[2026-04-23 15:23:59,420] 89 root - INFO - Starting ChromaDB ingestion.
+[2026-04-23 15:23:59,420] 90 root - INFO - JSON source: data\parsed\agreement-between-firm-and-traveling-sales-agent_clauses.json
+[2026-04-23 15:23:59,420] 91 root - INFO - ChromaDB directory: vectorstore\agreement-between-firm-and-traveling-sales-agent
+[2026-04-23 15:23:59,420] 92 root - INFO - Collection name: agreement-between-firm-and-traveling-sales-agent_clauses
+[2026-04-23 15:23:59,421] 98 root - WARNING - No records found in JSON. Ingestion skipped.
+[2026-04-23 15:23:59,421] 112 root - INFO - Step 2: ChromaDB ingestion completed.
+[2026-04-23 15:23:59,422] 114 root - INFO - Data ingestion pipeline completed successfully.
