@@ -42,18 +42,19 @@ The application follows a two-stage workflow: ingestion and question answering.[
 
 ```text
 .
-├── artifacts.py
-├── clause_parser.py
-├── config.py
-├── data_ingestion.py
-├── evaluation.py
-├── Exception.py
-├── logger.py
-├── main.py
-├── mlflowutils.py
-├── utils.py
-├── vectorstore_ingestor.py
-└── voyage_embeddings.py
+├── app
+   ├── artifacts.py
+   ├── clause_parser.py
+   ├── config.py
+   ├── data_ingestion.py
+   ├── evaluation.py
+   ├── Exception.py
+   ├── logger.py
+   ├── main.py
+   ├── mlflowutils.py
+   ├── utils.py
+   ├── vectorstore_ingestor.py
+   └── voyage_embeddings.py
 ```
 
 ### Core Files
