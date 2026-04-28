@@ -183,12 +183,9 @@ During execution, the project creates and uses these directories conceptually in
 
 ## Future Improvements
 
-- Add a `requirements.txt` or `pyproject.toml` for reproducible setup.[1]
+- Add a `pyproject.toml` for reproducible setup.[1]
 - Support PDF and scanned-contract ingestion with OCR.[1]
 - Add contract comparison across multiple uploaded agreements.[1]
 - Expand benchmark datasets for more reliable retrieval evaluation.[1]
 - Add authentication, document history, and exportable answer reports.[1]
 
-## License
-
-Add your preferred license here, such as MIT, Apache-2.0, or a custom academic/project license.[1]
